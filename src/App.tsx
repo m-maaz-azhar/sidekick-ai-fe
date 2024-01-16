@@ -12,10 +12,10 @@ const App: React.FC = () => {
     <Router>
       <Suspense fallback={<Loading />} >
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/tools/code-commenting" element={<CodeCommentTool />} />
-          <Route path="/tools/code-analysis" element={<CodeAnalysisTool />} />
-          <Route path="/tools/code-documentation" element={<CodeDocumentationTool />} />
+          <Route path="/sidekick-ai-fe/" element={<Dashboard />} />
+          <Route path="/sidekick-ai-fe/tools/code-commenting" element={<CodeCommentTool />} />
+          <Route path="/sidekick-ai-fe/tools/code-analysis" element={<CodeAnalysisTool />} />
+          <Route path="/sidekick-ai-fe/tools/code-documentation" element={<CodeDocumentationTool />} />
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </Suspense>
