@@ -30,7 +30,7 @@ const Dashboard = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tools.map((tool, index) => (
               <button
-                onClick={() => navigate(`/tools/${tool.title.toLowerCase().replace(' ', '-')}`)}
+                onClick={() => navigate(`/sidekick-ai-fe/tools/${tool.title.toLowerCase().replace(' ', '-')}`)}
                 key={index}
                 className="bg-white p-6 rounded-md shadow-md text-gray-800 flex flex-col items-center justify-center"
               >
